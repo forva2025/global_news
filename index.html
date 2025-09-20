@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Daily News - Your Trusted Source for World News</title>
+    <meta name="description" content="Stay informed with Global Daily News - breaking news, world politics, business, technology, sports, entertainment, and health coverage">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Global Daily News</span>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#world" class="nav-link">World</a></li>
+                    <li><a href="#politics" class="nav-link">Politics</a></li>
+                    <li><a href="#business" class="nav-link">Business</a></li>
+                    <li><a href="#technology" class="nav-link">Technology</a></li>
+                    <li><a href="#sports" class="nav-link">Sports</a></li>
+                    <li><a href="#entertainment" class="nav-link">Entertainment</a></li>
+                    <li><a href="#health" class="nav-link">Health</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Search and Controls -->
+                <div class="nav-controls">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="search-input" placeholder="Search news...">
+                        <button class="search-btn" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="breaking-label">
+            <i class="fas fa-bolt"></i>
+            BREAKING
+        </div>
+        <div class="breaking-content">
+            <div class="ticker-wrapper">
+                <div class="ticker-content" id="ticker-content">
+                    <!-- Breaking news items will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-carousel" id="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slides" id="carousel-slides">
+                        <!-- Slides will be populated by JavaScript -->
+                    </div>
+                    <div class="carousel-navigation">
+                        <button class="carousel-btn carousel-prev" id="carousel-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next" id="carousel-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators" id="carousel-indicators">
+                        <!-- Indicators will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Grid -->
+        <div class="content-wrapper">
+            <div class="content-grid">
+                <!-- Articles Section -->
+                <section class="articles-section">
+                    <h2 class="section-title">Latest News</h2>
+                    <div class="articles-grid" id="articles-grid">
+                        <!-- Articles will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Trending News -->
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">
+                            <i class="fas fa-fire"></i>
+                            Trending News
+                        </h3>
+                        <div class="trending-news" id="trending-news">
+                            <!-- Trending news will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">
+                            <i class="fas fa-envelope"></i>
+                            Newsletter
+                        </h3>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="text" class="form-control" placeholder="Your Name" id="newsletter-name" required>
+                            <input type="email" class="form-control" placeholder="Your Email" id="newsletter-email" required>
+                            <button type="submit" class="btn btn--primary btn--full-width">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">
+                            <i class="fas fa-share-alt"></i>
+                            Follow Us
+                        </h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link youtube" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Global Daily News</span>
+                </div>
+                <p class="footer-description">
+                    Your trusted source for breaking news, world updates, and in-depth coverage of politics, business, technology, and more.
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#" target="_blank">About Us</a></li>
+                    <li><a href="#" target="_blank">Privacy Policy</a></li>
+                    <li><a href="#" target="_blank">Terms of Service</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-title">Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#world">World</a></li>
+                    <li><a href="#politics">Politics</a></li>
+                    <li><a href="#business">Business</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-title">Connect</h4>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Global Daily News. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Search Results Modal -->
+    <div class="modal hidden" id="search-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Search Results</h3>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="search-results">
+                <!-- Search results will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
